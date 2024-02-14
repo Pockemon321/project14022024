@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if names %}
+    <ul>
+        {% for elem in names %}
+        <li>{{ elem.name }} - {{ elem.description }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
